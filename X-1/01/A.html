@@ -1,0 +1,73 @@
+<script>
+    function validateForm() {
+      event.preventDefault(); // Prevent default form submission
+    
+      // Get input values
+      var emailInput = document.getElementById('exampleInputEmail1');
+      var passwordInput = document.getElementById('exampleInputPassword1');
+      var confirmPasswordInput = document.getElementById('exampleInputConfirmPassword1'); // Assuming you add this ID
+      var email = emailInput.value;
+      var password = passwordInput.value;
+      var confirmPassword = confirmPasswordInput.value;
+    
+      // Clear previous error messages and styling
+      emailInput.classList.remove('error');
+      passwordInput.classList.remove('error');
+      confirmPasswordInput.classList.remove('error');
+    
+      // Email validation
+      if (email === "") {
+        alert("Please enter your email.");
+        emailInput.classList.add('error');
+        return false;
+      }
+    
+      // Basic email format check
+      var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email)) {
+        alert("Please enter a valid email address.");
+        emailInput.classList.add('error');
+        return false;
+      }
+    
+      // Password validation
+      if (password === "") {
+        alert("Please enter a password.");
+        passwordInput.classList.add('error');
+        return false;
+      }
+    
+      // Password confirmation validation
+      if (password !== confirmPassword) {
+        alert("Passwords do not match.");
+        passwordInput.classList.add('error');
+        confirmPasswordInput.classList.add('error');
+        return false;
+      }
+    
+      // If all validations pass
+      alert("Form submitted successfully!"); 
+      return true; // You might want to replace this with actual form submission logic
+    }
+</script>
+
+<form>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Email address</label>
+      <input type="email" class="form-control" placeholder="Enter Email Id"
+        id="exampleInputEmail1" aria-describedby="emailHelp">
+    </div>
+    <div class="mb-4 my-4 ">
+      <label for="exampleInputPassword1" class="form-label">Password</label>
+      <input type="password" class="form-control " placeholder="Enter Your Password"
+        id="exampleInputPassword1">
+    </div>
+    <div class="mb-4 my-4 ">
+      <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+      <input type="password" class="form-control " placeholder="Repeat the Password"
+        id="exampleInputPassword1">
+    </div>
+
+    <button type="submit" class="btn px-4 py-2 bg-dark text-white ">Sign Up</button>
+    <p class="pt-3">Already Have an Account <a href="login.html">Log in</a> </p>
+</form>

@@ -1,0 +1,19 @@
+{
+    "title": "The Effect of Social Media on Adolescent Mental Health",
+    "authors": ["Emily Johnson", "Michael Lee", "Sarah Davis"],
+    "publication_year": 2022,
+    "journal": "Journal of Adolescent Psychology",
+    "doi": "10.1037/0000123-456",
+    "abstract": "This study investigated the impact of social media use on the mental health of adolescents aged 13-18. A survey was conducted with 500 participants to assess their social media habits and mental well-being. The results showed a significant correlation between excessive social media use and increased levels of anxiety, depression, and low self-esteem. The findings highlight the need for interventions to promote healthy social media habits among adolescents.",
+    "key_findings": [
+      "Adolescents who spent more than 3 hours per day on social media had significantly higher levels of anxiety and depression compared to those who spent less time.",
+      "Negative feedback and social comparison on social media were strongly associated with low self-esteem.",
+      "Girls were more likely than boys to experience negative mental health outcomes related to social media use."
+    ],
+    "methodology": "The study employed a cross-sectional survey design. Participants were recruited through schools and youth organizations. The survey included questions on social media use, mental health symptoms, and demographic information. Data were analyzed using regression analysis.",
+    "implications": [
+      "Parents and educators should monitor adolescents' social media use and provide guidance on healthy habits.",
+      "Social media platforms should implement features to promote positive interactions and limit exposure to harmful content.",
+      "Mental health professionals should assess social media use as a potential factor in adolescent mental health issues."
+    ]
+}

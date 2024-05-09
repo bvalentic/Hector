@@ -1,0 +1,22 @@
+<select
+    id="plumeCompleteness"
+    v-model="selectedValue"
+    @change="applyFilter"
+    class="form-control adjustable-box"
+    style="margin: 0; padding: 5px; margin-top: 4px"
+    @focus="showDefaultText = false"
+    @blur="showDefaultText = true"
+    >
+    <option
+        v-for="value in rangeValues"
+        :key="value"
+        :value="value"
+        class="form-option"
+        >
+        {{
+        showDefaultText
+            ? `Plume Completeness: ${selectedValue}%`
+            : `${value}%`
+        }}
+    </option>
+</select>
